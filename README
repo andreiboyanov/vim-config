@@ -1,3 +1,7 @@
 Here is my setup of VIM as development environment for Python, OpenERP and Django. The setup is based on this article:
 
 http://sontek.net/blog/detail/turning-vim-into-a-modern-python-ide
+
+I additionally integrated the following VIM modules:
+
+- VimPdb (http://code.google.com/p/vimpdb/)
