@@ -24,3 +24,4 @@ nmap <leader>a <Esc>:Ack!
 nnoremap <leader>v <Plug>TaskList
 
 colorscheme desert
+set number
