@@ -33,6 +33,13 @@ nmap <leader>a <Esc>:Ack!
 " TaskList gives a quick access to lines with TODO and FIXME. Start it with \v
 map <leader>v <Plug>TaskList
 
+" \t starts command-t. that's a really quick way to open files even in large
+" projects. followign are some configurations of command-t
+let g:CommandTMaxHeight=25
+let g:CommandTMinHeight=15
+" let g:CommandTHighlightColor=Green
+set wildignore=*.pyc,*.o
+
 colorscheme desert
 set number
 
