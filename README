@@ -5,3 +5,19 @@ http://sontek.net/blog/detail/turning-vim-into-a-modern-python-ide
 I additionally integrated the following VIM modules:
 
 - VimPdb (http://www.vim.org/scripts/script.php?script_id=2043)
+
+
+INSTALL
+
+
+cd
+rm -rf .vim
+git clone https://github.com/andreiboyanov/vim-config .vim
+cd .vim/
+git submodule init
+git submodule update
+cd bundle/command-t/ruby/command-t/
+ruby extconf.rb 
+make
+
+Enjoy. :)
