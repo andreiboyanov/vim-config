@@ -20,4 +20,11 @@ cd bundle/command-t/ruby/command-t/
 ruby extconf.rb 
 make
 
+
+In case VIM doesn't look for .vim/vimrc I put the following in ~/.vimrc
+
+source ~/.vim/vimrc
+
+# TODO - how to deal with VIMs compliled without Ruby support? It's needed for command-t
+
 Enjoy. :)
