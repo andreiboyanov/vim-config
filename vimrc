@@ -17,15 +17,17 @@ map <c-l> W
 map <leader>g :GundoToggle<CR>
 let g:gundo_close_on_revert = 1
 
-" Validate python code according PEP8 with \8
+" Validate python code and programming style according PEP8 with \8
+
 let g:pep8_map='<leader>8'
+noremap <leader>f :call ftplugin#Flake8()<CR>
 
 au FileType python set omnifunc=pythoncomplete#Complete
 let g:SuperTabDefaultCompletionType = "context"
 
 " FIXME: doesn't work for now. 
 map <leader>j :RopeGotoDefinition<CR>
-map <leader>r :RopeRename<CR>
+autocmd FileType python map <leader>f :call Flake8()<CR>
 
 " Powerfull searcj using the ack command. Start it with \a
 nmap <leader>a <Esc>:Ack!
