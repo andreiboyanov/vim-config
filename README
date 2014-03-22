@@ -5,6 +5,7 @@ http://sontek.net/blog/detail/turning-vim-into-a-modern-python-ide
 I additionally integrated the following VIM modules:
 
 - VimPdb (http://www.vim.org/scripts/script.php?script_id=2043)
+- vim-flake8 - to check pep8 and programming errors trough PyFlake
 
 
 INSTALL
@@ -31,3 +32,11 @@ NOTES
 - To compile the command-t stuff you need the rudy-dev package. Just ruby is not enough.
 
 Enjoy. :)
+
+
+CHANGES
+
+22-03-2014
+Added vim-flake8
+
+
