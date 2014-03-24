@@ -18,9 +18,9 @@ map <leader>g :GundoToggle<CR>
 let g:gundo_close_on_revert = 1
 
 " Validate python code and programming style according PEP8 with \8
-
+" or with \f (for PyFlake)
 let g:pep8_map='<leader>8'
-noremap <leader>f :call ftplugin#Flake8()<CR>
+autocmd FileType python map <leader>f :call Flake8()<CR>
 
 " Autocompletion with <ctrl>+<space>
 au FileType python set omnifunc=pythoncomplete#Complete
@@ -31,7 +31,6 @@ let g:SuperTabMappingBackward = '<s-c-space>'
 
 " FIXME: doesn't work for now. 
 map <leader>j :RopeGotoDefinition<CR>
-autocmd FileType python map <leader>f :call Flake8()<CR>
 
 " Powerfull searcj using the ack command. Start it with \a
 nmap <leader>a <Esc>:Ack!
@@ -52,3 +51,4 @@ set number
 " TODO: Да направя командите (поне поне основните) да работи и когато е избрана българска клавиатура
 
 set tabstop=4 shiftwidth=4 expandtab
+map <leader>d iimport pdb(); pdb.set_trace()<ESC>I
