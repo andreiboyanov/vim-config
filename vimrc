@@ -22,8 +22,12 @@ let g:gundo_close_on_revert = 1
 let g:pep8_map='<leader>8'
 noremap <leader>f :call ftplugin#Flake8()<CR>
 
+" Autocompletion with <ctrl>+<space>
 au FileType python set omnifunc=pythoncomplete#Complete
 let g:SuperTabDefaultCompletionType = "context"
+let g:SuperTabMappingForward = '<c-space>'
+let g:SuperTabMappingBackward = '<s-c-space>'
+
 
 " FIXME: doesn't work for now. 
 map <leader>j :RopeGotoDefinition<CR>
@@ -46,3 +50,5 @@ colorscheme desert
 set number
 
 " TODO: Да направя командите (поне поне основните) да работи и когато е избрана българска клавиатура
+
+set tabstop=4 shiftwidth=4 expandtab
