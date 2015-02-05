@@ -30,11 +30,17 @@ NOTES
 
 - If you don't have python and/or rubby support in VIM try to install vim-nox (at least this is the name of the package under Debian)
 - To compile the command-t stuff you need the rudy-dev package. Just ruby is not enough.
+- In order to use flake8 you must install in first - pip install flake8
 
 Enjoy. :)
 
 
 CHANGES
+
+05-05-2015
+Replaced minibuferexp with https://github.com/fholgado/minibufexpl.vim
+Remove vim-rope. To add a replacement shortly
+
 
 22-03-2014
 Added vim-flake8
