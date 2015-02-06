@@ -51,4 +51,4 @@ set number
 " TODO: Да направя командите (поне поне основните) да работи и когато е избрана българска клавиатура
 
 set tabstop=4 shiftwidth=4 expandtab
-map <leader>d iimport pdb(); pdb.set_trace()<ESC>I
+map <leader>d iimport pdb; pdb.set_trace()<ESC>I
